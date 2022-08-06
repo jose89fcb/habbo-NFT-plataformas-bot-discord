@@ -66,10 +66,10 @@ async def plataforma(ctx,   keko, *, color):
     ###
     
     plataforma = Image.open(r"fondos/fondo"+color+ ".png").convert("RGBA") #imagen de la trozo
-    img1 = plataforma.resize((200,310), Image.Resampling.LANCZOS)#tamaño de tiburon
+    img1 = plataforma.resize((200,310), Image.Resampling.LANCZOS)#tamaño del fondo
 
     
-    img1.paste(plataforma,(0,0), mask = plataforma) #Posicion del tiburon
+    img1.paste(plataforma,(0,0), mask = plataforma) #Posicion del fondo
     img1.paste(img2,(38,0), mask = img2) #Posicion del keko 
 
     
